@@ -51,7 +51,7 @@ To build your own firmware you need a GNU/Linux, BSD or MacOSX system (case sens
 
   ### Quickstart
   - Method 1:
-    1. Run `git clone -b <branch> --single-branch https://github.com/immortalwrt/immortalwrt` to clone the source code.
+    1. Run `git clone -b <branch> --single-branch https://github.com/poetraeble5/immortalwrt` to clone the source code.
     2. Run `cd immortalwrt` to enter source directory.
     3. Run `./scripts/feeds update -a` to obtain all the latest package definitions defined in feeds.conf / feeds.conf.default
     4. Run `./scripts/feeds install -a` to install symlinks for all obtained packages into package/feeds/
@@ -70,7 +70,7 @@ To build your own firmware you need a GNU/Linux, BSD or MacOSX system (case sens
 
       - For Linux User:
         ```bash
-        git clone -b <branch> --single-branch https://github.com/immortalwrt/immortalwrt && cd immortalwrt
+        git clone -b <branch> --single-branch https://github.com/poetraeble5/immortalwrt && cd immortalwrt
         docker run --rm -it \
             -v $PWD:/openwrt \
           immortalwrt/opde:base zsh
@@ -80,7 +80,7 @@ To build your own firmware you need a GNU/Linux, BSD or MacOSX system (case sens
       - For Windows User:
         1. Create a volume 'immortalwrt' and clone ImmortalWrt source into volume.
           ```bash
-          docker run --rm -it -v immortalwrt:/openwrt immortalwrt/opde:base git clone -b <branch> --single-branch https://github.com/immortalwrt/immortalwrt .
+          docker run --rm -it -v immortalwrt:/openwrt immortalwrt/opde:base git clone -b <branch> --single-branch https://github.com/poetraeble5/immortalwrt .
           ```
         2. Enter docker container and update feeds.
           ```bash
